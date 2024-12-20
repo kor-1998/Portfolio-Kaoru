@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+
+    <!-- css reset -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>  
+    <!-- Header -->
+    <header>
+        <div class="topnav">
+            <h1 class="logo">Kaoru<span>.</span></h1>
+            <nav id="myLinks">
+                <a href="./about.html">About</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+            <!-- Hamburger menu -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <main class="contact-section">
+        <div class="contact-container">
+            <div class="contact-text">
+                <h2>Get in Touch</h2>
+                <p>Feel free to reach out to me! </p>
+                    <p>I'm available for any questions or collaborations.</p>
+            </div>
+
+            <!-- <legend>Get in Touch</legend> -->
+                <form id="contactForm" action="">
+                    <fieldset>
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" class="contact-box">
+                        <p id="firstNameErrorMessage" class="error-message">Please fill in your First Name</p>
+                            
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" class="contact-box">
+                        <p id="lastNameErrorMessage" class="error-message">Please fill in your Last Name</p>
+                        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="contact-box">
+                        <p id="emailErrorMessage" class="error-message">Please fill in your Email</p>
+                            
+                        <label for="message">Message</label>
+                        <textarea id="message" class="contact-box"></textarea>
+                    </fieldset>
+                    <input type="submit" value="Send message" class="submit-btn">
+                </form>
+        </div>
+    </main>
+
+     <!-- footer section -->
+     <footer>
+        <a class="footer-logo" href="https://www.linkedin.com/feed/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+        <a class="footer-logo" href="https://github.com/" target="_blank"><i class='bx bxl-github'></i></a>
+        <a class="footer-logo" href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+        <a class="footer-logo" href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-square' ></i></a>
+        <a href="#" id="back-to-top" class="footer-logo" ><i class='bx bxs-upvote'></i></a>
+
+        <p>Design and Developed by Kaoru Sakai</p>
+    </footer>
+
+    <!-- audio file -->
+    <audio id="focus-Sound" src="assets/audio/btn.mp3" preload="auto"></audio>
+    <!-- External JS -->
+    <script src="js/contact.js"></script>
+</body>
+</html>

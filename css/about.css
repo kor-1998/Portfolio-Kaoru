@@ -1,0 +1,357 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+span{
+    color:rgb(223, 86, 109);
+    margin-right: 30px;
+}
+
+/* Header section  */
+.topnav {
+    overflow: hidden;
+    padding:12px;
+    background-color: #333;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.logo {
+    color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 14px 14px 14px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+
+
+/* Why Hire me Section */
+.about{
+    position: relative;
+    padding: 10% 15% 10% 15%;
+}
+
+.about-content{
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-content span{
+    font-size: 35px;
+    color:rgb(223, 86, 109);
+}
+
+.about-content h2{
+    padding-bottom: 30px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.about-content h3{
+    font-size: 32px;
+}
+
+.about-desc {
+    max-width: 500px;
+}
+
+.about-content p{
+    padding-top:20px;
+    font-size:20px;
+    color:#666;
+}
+
+.profile-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic > img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+/* Services Section */
+#services{
+    width: 100vw;
+
+    padding: 30px 0;
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#services > h2{
+    color:#333;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+#services > div{
+    width: 100%;
+
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 50px;
+}
+
+.services-container{
+    width: 150px;
+    height: 220px;
+    border-radius: 5px;
+    border: solid 1px #333;
+
+    transition: all 1s ease;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.services-container > figure{
+    width: 125px;
+    height: 125px;
+    margin-top: 10px;
+
+    overflow: hidden;
+}
+
+.services-container > figure> img{
+    width:100%;
+    transition: all 1s ease;
+}
+
+.services-container > h3{
+    font-weight: bold;
+    font-size: 15px;
+    color:#333;
+    text-transform: uppercase;
+}
+
+.services-container > p{
+    width: 130px;
+    font-size: 15px;
+    color:#333;
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* mouse enter */
+.services-container.mouseEnter {
+    background-color: black;
+}
+
+/* scale up */
+.services-container > figure> img.scaleUp{
+    transform: scale(1.4);
+
+}
+
+/* mouse over */
+.services-container > h3.mouseOver{
+    text-decoration: underline;
+    font-style:italic;
+    color:#fff;
+
+}
+.services-container > p.mouseOver {
+    color: #fff;
+}
+
+/* software skiils section */
+#software-skills {
+    width: 100vw;
+    padding: 30px 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#software-skills h2 {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.skills ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 2 columns */
+    gap: 20px; /* Adjusts the gap between items */
+    list-style-type: none;
+    padding: 0;
+}
+.skilles-container {
+    width: 180px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 1px #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Footer Section */
+footer {
+    width: 100vw;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: #333;
+}
+
+.footer-logo {
+    color: #333;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer-logo:hover {
+    color: rgb(223, 86, 109);
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* Media Query for smaller screens (mobile) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; 
+    }
+
+    header {
+        padding: 10px 20px; 
+    }
+
+    .navbar a {
+        font-size: 20px; 
+        margin-left: 10px; 
+    }
+
+    .about {
+        padding: 10%; 
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .about-content span, .about-content h2, .about-content h3 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 16px; 
+    }
+
+    .profile-pic > img {
+        width: 150px; 
+        height: 150px; 
+    }
+
+    #services > h2, #software-skills h2 {
+        font-size: 24px; 
+    }
+
+    #services > div, #software-skills .skills ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .services-container {
+        width: 60%; 
+        height: auto;
+    }
+
+    .skills ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 5 columns */
+    }
+
+    .skilles-container {
+        width: 100px; 
+        height: auto;
+        padding: 10px; 
+        text-align: center; 
+    }
+
+    footer {
+        padding: 10px; 
+    }
+
+    footer p {
+        font-size: 12px; 
+    }
+
+    #back-to-top {
+        font-size: 18px; 
+    }
+}
+
+@keyframes skill-left {
+    from { transform: translateX(-100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes skill-right {
+    from { transform: translateX(100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.service-visible-left {
+    animation: skill-left 1s ease-in forwards;
+}
+
+.service-visible-right {
+    animation: skill-right 1s ease-in forwards;
+}

@@ -1,0 +1,266 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+span{
+    color:rgb(223, 86, 109);
+    margin-right: 30px;
+}
+
+
+
+/* Header section  */
+.topnav {
+    overflow: hidden;
+    padding:12px;
+    background-color: #333;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.logo {
+    color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 14px 14px 14px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* main */
+main h1{
+  font-size: 30px;
+  font-weight: 250;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  position: absolute; /* Position relative to the container */
+    bottom: 10px; /* Distance from the bottom of the container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for proper centering */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: #fff; /* Text color */
+    padding: 10px 15px; /* Add spacing around the text */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+.title:hover {
+  opacity: 1; /* Fully visible on hover */
+}
+
+main span{
+  margin-left: 10px;
+}
+
+.project-item .image{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+
+.project-item:hover .image{
+  transform: scale(1.25);
+}
+
+/* Grid Container */
+#products {
+    margin: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem;
+    gap: 10px; /* Space between grid items */
+  }
+  
+  /* Grid Items */
+  .project-item {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px; 
+
+    position: relative; /* Enables positioning child elements */
+    display: inline-block; /* Ensure images and titles stay together */
+    overflow: hidden; /* Prevents title from spilling outside */
+  }
+  
+  /* Specific Item Sizes and Positions */
+  #products > div:nth-child(1) {
+    grid-column: span 1; 
+    grid-row: span 1;    
+  }
+  
+  #products > div:nth-child(2) {
+    grid-column: span 2; 
+    grid-row: span 1;  
+  }
+  
+  #products > div:nth-child(3) {
+    grid-column: span 2; 
+    grid-row: span 1; 
+  }
+  
+  #products > div:nth-child(4) {
+    grid-column: span 2; 
+    grid-row: span 1;
+  }
+  
+  #products > div:nth-child(5) {
+    grid-column: span 1; 
+    grid-row: span 1;
+  }
+  
+  #products > div:nth-child(6) {
+    grid-column: span 2; 
+    grid-row: span 1; 
+  }
+  
+  #products > div:nth-child(8) {
+    grid-column: span 2; 
+    grid-row: span 1; 
+  }
+  
+
+/* Footer Section */
+footer {
+    width: 100vw;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: #333;
+}
+
+.footer-logo {
+    color: #333;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer-logo:hover {
+    color: rgb(223, 86, 109);
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* Media Query for smaller screens (mobile) */
+@media (max-width: 600px) {
+    /* body { 
+    } */
+
+    header {
+        width: 100vw;
+        height: 90px;
+    }
+
+    .navbar a {
+        font-size: 20px; 
+    }
+
+
+/* projects */
+#products {
+  margin: 10px;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3,33 33%);
+  gap: 20px; /* Space between grid items */
+}
+
+/* Specific Item Sizes and Positions */
+#products > div:nth-child(1) {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+}
+
+#products > div:nth-child(2) {
+   grid-row-start: 7;
+}
+
+#products > div:nth-child(3) {
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+
+#products > div:nth-child(5) {
+  grid-row-start: 1;
+  grid-row-end:3;
+  grid-column-start: 1;
+}
+
+#products > div:nth-child(4) {
+  grid-row-start: 4;
+  grid-column-start: 1;
+}
+
+#products > div:nth-child(6) {
+  grid-row-start: 3;
+  grid-column-start: 1;
+}
+
+#products > div:nth-child(7) {
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 2;
+}
+
+#products > div:nth-child(8) {
+  grid-row-start: 5;
+  grid-column-start: 1;
+  
+}
+
+    footer {
+        padding: 10px; 
+    }
+
+    footer p {
+        font-size: 12px; 
+    }
+
+    #back-to-top {
+        font-size: 18px; 
+    }
+}
